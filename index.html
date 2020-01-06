@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>DASHBOARD</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="stylesmain.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">        
+        <div class="navbar navbar-default customnav navbar-static-top" role="navigation" style="background-color:#fff;border-color:#c3b4b4 !important">
+            
+                <div class="navbar-header">
+
+                    <img src="logo.jpg" alt="Company Logo" width="200"/>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" style="float: left;background-color: black;">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="collapse-1">
+                    <ul class="nav navbar-nav pull-right ">
+                        <li><a href="#" class="active" >Dashboard<span class="caret"></span></a></li>
+                        <li><a href="#" >Apps<span class="caret"></span></a></li>
+                        <li><a href="#" >Pages<span class="caret"></span></span></a></li>
+                        <li><a href="#" >Collection<span class="caret"></span></a></li>
+                        <li><a href="#" >Components<span class="caret"></span></a></li>
+                    </ul>
+                </div>
+            
+        </div>            
+        <div>
+            <h4>DASHBOARD / <span style="color:#6495ed;">WEBSITE ANALYTICS</span></h4>
+            <h2>Welcome To Dashoard</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="innerWrapper">
+                                <div class="innerttxt">
+                                    <h5 class="inlineblk"><strong>Audience Metrices</strong></h5>
+                                    <h6 class="inlineblk">Audience to which the users belonged while on the current date range.</h6>
+                                </div>
+                                <div class="innerttxt pull-right">
+                                    <div class="input-group">
+                                        <button class="btn btnBorder btnLeftBorder" type="button">DAY </button>
+                                        <button class="btn btnBorder" type="button">WEEK</button>
+                                        <button class="btn btnBorder btnRightBorder active" type="button">MONTH</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card-block"><canvas id='myBarChart'></canvas></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-block"><canvas id='myhorzChart'></canvas></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="height: 308px;">
+                    <div class="card-block">
+                        <h5><strong>Sessions By Channel</strong></h5>
+                        <hr>
+                        <canvas id='myPieChart'></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="main.js" ></script>
+</body>
+</html>
